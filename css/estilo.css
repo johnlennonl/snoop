@@ -1,0 +1,197 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.logotipo{
+    width: 120px;
+}
+.textoNavSuperior{
+    color: white;
+    font-size: 0.6rem;
+
+}
+.navBar{
+    color: rgb(18, 18, 17);
+}
+
+/*  c   a   r   d  */
+
+.grupoCard{
+    border: none;
+    margin-top: 1.4rem;
+    border-radius: 10px;
+
+
+}
+
+/*  b a n n e r   */
+.grupobanner {
+    border: none;
+}
+
+/* t i t u l o s  */
+
+.Titulos{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Logotipos */
+/* iconos Flotantes */
+.logotipoF {
+    width: 100px;
+    object-fit: contain;
+    aspect-ratio: 3/2;  
+    cursor: pointer;
+    transition: all 0.4s;;
+}
+
+.logotipoF:hover{
+    transform: scale(1.5);
+}
+
+.colorFondo{
+background-color: rgba(161, 158, 158, 0.165);
+}
+
+/* Informacionm */
+
+.cardInformacion {
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.sutbtitulos {
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Clientes */
+
+.cardCliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    max-width: 320px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 20px;
+}
+
+.stars {
+    display: flex;
+    grid-gap: 0.125rem;
+    gap: 0.125rem;
+    color: rgb(238, 203, 8);
+}
+
+.star {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.infos {
+    margin-top: 1rem;
+}
+
+.date-time {
+    color: rgb(60, 106, 232);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 0.4rem;
+    line-height: 1.625;
+    color: rgb(243, 243, 243);
+}
+
+.author {
+    margin-top: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(107, 114, 128, 1);
+}
+
+.author:hover {
+    color: #f8f9fa;
+}
+
+/* CARD SHOP */
+.cardShop{
+    border: none;
+    background-color: transparent;
+}
+
+.buttonComprarPrincipal {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.buttonComprarPrincipal {
+    --primary-color: #111;
+    --hovered-color: #000000;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.buttonComprarPrincipal p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+}
+
+.buttonComprarPrincipal::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.buttonComprarPrincipal p::before {
+    position: absolute;
+    /*   box-sizing: border-box; */
+    content: "Comprar";
+    width: 0%;
+    inset: 0;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.buttonComprarPrincipal:hover::after {
+    width: 100%;
+}
+
+
+
+.buttonComprarPrincipal:hover svg {
+    transform: translateX(4px);
+}
+
+.buttonComprarPrincipal svg {
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+}
+
+/* CURSOR POINTER */
+img {
+    cursor: pointer;
+}
