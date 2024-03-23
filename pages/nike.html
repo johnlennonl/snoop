@@ -17,18 +17,20 @@
 
 <body>
     <!--NavSub-->
-    <nav class="navbar bg-black">
-        <div class="container-fluid">
-            <span class="textoNavSuperior text-center ">
-                Siguenos en nuestras redes sociales
+
+    <nav class="navbar bg-black ">
+        <div class="container-fluid  d-flex justify-content-center  ">
+            <span class="textoNavSuperior  ">
+                Tenemos productos con descuentos sorprendentes 📣
             </span>
         </div>
     </nav>
+
     <!--NavBar-->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/logotipo.png" alt="Logotipo" class="logotipo"></a>
+                <a class="navbar-brand" href="#top"><img src="../img/logotipo.png" alt="Logotipo" class="logotipo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -71,10 +73,10 @@
     <div class="container">
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link linkNav " aria-current="page">Hombres</a></li>
-                <li class="nav-item"><a href="#" class="nav-link linkNav">Mujeres</a></li>
-                <li class="nav-item"><a href="#" class="nav-link linkNav">Kids</a></li>
-                <li class="nav-item"><a href="#" class="nav-link linkNav">Accesorios</a></li>
+                <li class="nav-item"><a href="#hombres" class="nav-link linkNav " aria-current="page">Hombres</a></li>
+                <li class="nav-item"><a href="#mujeres" class="nav-link linkNav">Mujeres</a></li>
+                <li class="nav-item"><a href="#kids" class="nav-link linkNav">Kids</a></li>
+                <li class="nav-item"><a href="#accesorios" class="nav-link linkNav">Accesorios</a></li>
             </ul>
         </header>
     </div>
@@ -94,42 +96,80 @@
     </div>
 
     <div class="container">
-        <h1 class="Titulos mx-auto text-center mt-4"> ¡ Disponible Hombres !  </h1>
+        <h1 class="Titulos mx-auto text-center mt-4" id="hombres"> Disponible Hombres </h1>
     </div>
 
     <!--Calzado-->
 
     <div class="container mb-5 mt-5">
-        <h4 class="subtitulos">Calzado para Hombres </h4>
+        <h4 class="subtitulo">Calzado para Hombres </h4>
+        <div class="d-flex justify-content-end">
+            <a href="#top">
+                <button class="buttonBack">
+                    <div class="text">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>top</span>
+                    </div>
+                    <div class="clone">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>top</span>
+                    </div>
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg" width="20px">
+                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+            </a>
+        </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <img src="../img/Nike/shoes/calzado-air-force-1-07-jBrhbr.png"
-                        class="card-img-top" alt="Calzado Nike">
+                    <img src="../img/Nike/shoes/calzado-air-force-1-07-jBrhbr.png" class="card-img-top"
+                        alt="Calzado Nike">
                     <div class="card-body">
                         <h5 class="card-title">Nike Air Force 1'07</h5>
                         <p class="descriptionProducto"> Calzado para Hombre </p>
                         <p class="precio"> $119.97 <span class="descuento">$145.40</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <img src="../img/Nike/shoes/calzado-air-force-1-07-premium-FLRvC9.png"
-                        class="card-img-top" alt="Calzado Nike">
+                    <img src="../img/Nike/shoes/calzado-air-force-1-07-premium-FLRvC9.png" class="card-img-top"
+                        alt="Calzado Nike">
                     <div class="card-body">
                         <h5 class="card-title">Nike Air Force 1'07 Premiunm</h5>
                         <p class="descriptionProducto"> Calzado para Hombre </p>
                         <p class="precio"> $119.97 <span class="descuento">$145.40</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -137,16 +177,25 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <img src="../img/Nike/shoes/calzado-blazer-low-77-jumbo-Z1xc3G.png"
-                        class="card-img-top" alt="Calzado Nike">
+                    <img src="../img/Nike/shoes/calzado-blazer-low-77-jumbo-Z1xc3G.png" class="card-img-top"
+                        alt="Calzado Nike">
                     <div class="card-body">
                         <h5 class="card-title">Nike Blazer Low '77 Jumbo</h5>
                         <p class="descriptionProducto"> Calzado para Hombre </p>
                         <p class="precio"> $71.97 <span class="descuento">$100.40</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -154,16 +203,24 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <img src="../img/Nike/shoes/calzado-air-max-dn-27XkSQ.png"
-                        class="card-img-top" alt="Calzado Nike">
+                    <img src="../img/Nike/shoes/calzado-air-max-dn-27XkSQ.png" class="card-img-top" alt="Calzado Nike">
                     <div class="card-body">
                         <h5 class="card-title">Nike Air Max Dn</h5>
                         <p class="descriptionProducto"> Calzado para Hombre </p>
                         <p class="precio"> $155.00 <span class="descuento">$175.10</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -178,9 +235,18 @@
                         <p class="descriptionProducto"> Calzado de trail para Hombre </p>
                         <p class="precio"> $62.97 <span class="descuento">$90</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -188,16 +254,24 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <img src="../img/Nike/shoes/chanclas-calm-4hQGBf.png"
-                        class="card-img-top" alt="Calzado Nike">
+                    <img src="../img/Nike/shoes/chanclas-calm-4hQGBf.png" class="card-img-top" alt="Calzado Nike">
                     <div class="card-body">
                         <h5 class="card-title">Nike Calm</h5>
                         <p class="descriptionProducto"> Chanclas para Hombre </p>
                         <p class="precio"> $50.97 <span class="descuento">$60</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -212,33 +286,60 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/playera-con-ajuste-oversize-jordan-flight-essentials-6RzkcD/DZ0604-436"><img src="../img/Nike/vestimenta/playera-con-ajuste-oversize-jordan-flight-essentials-6RzkcD.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a
+                        href="https://www.nike.com/us/es/t/playera-con-ajuste-oversize-jordan-flight-essentials-6RzkcD/DZ0604-436"><img
+                            src="../img/Nike/vestimenta/playera-con-ajuste-oversize-jordan-flight-essentials-6RzkcD.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Jordan Flight Essentials</h5>
                         <p class="descriptionProducto"> Playera extragrande para hombre</p>
                         <p class="precio"> $31.97 <span class="descuento">$45.40</span></p>
-                        <a href="https://www.nike.com/us/es/t/playera-con-ajuste-oversize-jordan-flight-essentials-6RzkcD/DZ0604-436"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button>
+                        <a
+                            href="https://www.nike.com/us/es/t/playera-con-ajuste-oversize-jordan-flight-essentials-6RzkcD/DZ0604-436"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
                     </div></a>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/playera-con-bolsillo-sportswear-premium-essential-fJRVWJ/DQ9295-437"><img src="../img/Nike/vestimenta/playera-con-bolsillo-sportswear-premium-essential-fJRVWJ.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a
+                        href="https://www.nike.com/us/es/t/playera-con-bolsillo-sportswear-premium-essential-fJRVWJ/DQ9295-437"><img
+                            src="../img/Nike/vestimenta/playera-con-bolsillo-sportswear-premium-essential-fJRVWJ.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Sportswear Premium Essentials</h5>
                         <p class="descriptionProducto"> Playera con bolsillo para hombre </p>
                         <p class="precio"> $40.10 <span class="descuento">$45.60</span></p>
-                        <a href="https://www.nike.com/us/es/t/playera-con-bolsillo-sportswear-premium-essential-fJRVWJ/DQ9295-437">
+                        <a
+                            href="https://www.nike.com/us/es/t/playera-con-bolsillo-sportswear-premium-essential-fJRVWJ/DQ9295-437">
                             <button class="cartBtn">
-                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
                                 ADD TO CART
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
                             </button>
                         </a>
 
@@ -247,16 +348,26 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/playera-dri-fit-acg-cruise-boat-GWqbcd/FQ3725-809"><img src="../img/Nike/vestimenta/playera-dri-fit-acg-cruise-boat-GWqbcd.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/playera-dri-fit-acg-cruise-boat-GWqbcd/FQ3725-809"><img
+                            src="../img/Nike/vestimenta/playera-dri-fit-acg-cruise-boat-GWqbcd.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike ACG "Cruise Boat"</h5>
                         <p class="descriptionProducto"> Playera Dri-FIT para hombre </p>
                         <p class="precio"> $50.00 <span class="descuento">$55.40</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -264,16 +375,26 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/playera-de-tenis-dri-fit-court-1xBXhj/FV8434-012"><img src="../img/Nike/vestimenta/playera-de-tenis-dri-fit-court-1xBXhj.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/playera-de-tenis-dri-fit-court-1xBXhj/FV8434-012"><img
+                            src="../img/Nike/vestimenta/playera-de-tenis-dri-fit-court-1xBXhj.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">NikeCourt</h5>
                         <p class="descriptionProducto"> Playera de tenis Dri-FIT para hombre </p>
                         <p class="precio"> $35.00 <span class="descuento">$40.10</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -281,34 +402,60 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href=" https://www.nike.com/us/es/t/playera-de-skateboarding-con-logotipo-sb-dPWrG7/CV7539-386"><img src="../img/Nike/vestimenta/playera-de-skateboarding-con-logotipo-sb-dPWrG7.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href=" https://www.nike.com/us/es/t/playera-de-skateboarding-con-logotipo-sb-dPWrG7/CV7539-386"><img
+                            src="../img/Nike/vestimenta/playera-de-skateboarding-con-logotipo-sb-dPWrG7.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike SB</h5>
                         <p class="descriptionProducto"> Playera de skateboarding con logotipo </p>
                         <p class="precio"> $40.97 <span class="descuento">$47</span></p>
-                        <a href="https://www.nike.com/us/es/t/playera-de-skateboarding-con-logotipo-sb-dPWrG7/CV7539-386"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a
+                            href="https://www.nike.com/us/es/t/playera-de-skateboarding-con-logotipo-sb-dPWrG7/CV7539-386"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/playera-de-b%C3%A1squetbol-kevin-durant-GKjvrH/FV8404-493"><img src="../img/Nike/vestimenta/playera-de-básquetbol-kevin-durant-GKjvrH.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/playera-de-b%C3%A1squetbol-kevin-durant-GKjvrH/FV8404-493"><img
+                            src="../img/Nike/vestimenta/playera-de-básquetbol-kevin-durant-GKjvrH.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Kevin Durant</h5>
                         <p class="descriptionProducto">Playera de básquetbol para hombre </p>
                         <p class="precio"> $50.97 <span class="descuento">$55.50</span></p>
-                        <a href="https://www.nike.com/us/es/t/playera-de-b%C3%A1squetbol-kevin-durant-GKjvrH/FV8404-493"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a
+                            href="https://www.nike.com/us/es/t/playera-de-b%C3%A1squetbol-kevin-durant-GKjvrH/FV8404-493"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
                     </div>
                 </div>
             </div>
@@ -322,33 +469,59 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8a0fe03d-4d22-46ae-9d2b-e30253e3ec09/chamarra-de-entrenamiento-de-tejido-woven-sportswear-solo-swoosh-hrSnXz.png"><img src="../img/Nike/vestimenta/chamarra-de-entrenamiento-de-tejido-woven-sportswear-solo-swoosh-hrSnXz.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a
+                        href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8a0fe03d-4d22-46ae-9d2b-e30253e3ec09/chamarra-de-entrenamiento-de-tejido-woven-sportswear-solo-swoosh-hrSnXz.png"><img
+                            src="../img/Nike/vestimenta/chamarra-de-entrenamiento-de-tejido-woven-sportswear-solo-swoosh-hrSnXz.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Sportswear Solo Swoosh</h5>
                         <p class="descriptionProducto"> Chamarra de entrenamiento de tejido Woven </p>
                         <p class="precio"> $123.97 <span class="descuento">$145.40</span></p>
-                        <a href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8a0fe03d-4d22-46ae-9d2b-e30253e3ec09/chamarra-de-entrenamiento-de-tejido-woven-sportswear-solo-swoosh-hrSnXz.png"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button>
+                        <a
+                            href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8a0fe03d-4d22-46ae-9d2b-e30253e3ec09/chamarra-de-entrenamiento-de-tejido-woven-sportswear-solo-swoosh-hrSnXz.png"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
                     </div></a>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/chamarra-de-running-storm-fit-track-club-BKksps/FB5515-410"><img src="../img/Nike/vestimenta/chamarra-de-running-storm-fit-track-club-BKksps.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/chamarra-de-running-storm-fit-track-club-BKksps/FB5515-410"><img
+                            src="../img/Nike/vestimenta/chamarra-de-running-storm-fit-track-club-BKksps.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Track Club</h5>
                         <p class="descriptionProducto"> Chamarra de runnung Storn-Fit para hombres </p>
                         <p class="precio"> $100.10 <span class="descuento">$115.60</span></p>
-                        <a href="https://www.nike.com/us/es/t/chamarra-de-running-storm-fit-track-club-BKksps/FB5515-410">
+                        <a
+                            href="https://www.nike.com/us/es/t/chamarra-de-running-storm-fit-track-club-BKksps/FB5515-410">
                             <button class="cartBtn">
-                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
                                 ADD TO CART
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
                             </button>
                         </a>
 
@@ -357,16 +530,26 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/chamarra-de-calentamiento-jordan-sport-jam-MFNmq5/FN5848-010"><img src="../img/Nike/vestimenta/chamarra-de-calentamiento-jordan-sport-jam-MFNmq5.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/chamarra-de-calentamiento-jordan-sport-jam-MFNmq5/FN5848-010"><img
+                            src="../img/Nike/vestimenta/chamarra-de-calentamiento-jordan-sport-jam-MFNmq5.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Jordan Sport Jam</h5>
                         <p class="descriptionProducto"> Chamarra de calentamiento Jordan para hombre </p>
                         <p class="precio"> $120.00 <span class="descuento">$130.40</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -374,16 +557,26 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/pants-de-calentamiento-jordan-sport-jam-Mch8rS/FN5850-436"><img src="../img/Nike/vestimenta/pants-de-calentamiento-jordan-sport-jam-Mch8rS.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/pants-de-calentamiento-jordan-sport-jam-Mch8rS/FN5850-436"><img
+                            src="../img/Nike/vestimenta/pants-de-calentamiento-jordan-sport-jam-Mch8rS.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Jordan Sport Jam</h5>
                         <p class="descriptionProducto"> Pants de calentamiento para hombre </p>
                         <p class="precio"> $70.00 <span class="descuento">$100.10</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
 
                     </div>
@@ -391,33 +584,58 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href=" https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/398a7d39-64db-4ccf-aa14-bee365daceb4/pants-de-f%C3%BAtbol-therma-fit-repel-culture-of-football-1Vlb4Q.png "><img src="../img/Nike/vestimenta/pants-de-fútbol-therma-fit-repel-culture-of-football-1Vlb4Q.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a
+                        href=" https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/398a7d39-64db-4ccf-aa14-bee365daceb4/pants-de-f%C3%BAtbol-therma-fit-repel-culture-of-football-1Vlb4Q.png "><img
+                            src="../img/Nike/vestimenta/pants-de-fútbol-therma-fit-repel-culture-of-football-1Vlb4Q.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Culture of Football</h5>
                         <p class="descriptionProducto"> Pants de futbol Therma-FIT Repel</p>
                         <p class="precio"> $100.97 <span class="descuento">$120</span></p>
-                        <a href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/398a7d39-64db-4ccf-aa14-bee365daceb4/pants-de-f%C3%BAtbol-therma-fit-repel-culture-of-football-1Vlb4Q.png"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a
+                            href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/398a7d39-64db-4ccf-aa14-bee365daceb4/pants-de-f%C3%BAtbol-therma-fit-repel-culture-of-football-1Vlb4Q.png"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/041a8ad3-f090-4ab1-8a7c-686fb1a88099/pants-forrados-de-tejido-woven-windrunner-bgz7fD.png"><img src="../img/Nike/vestimenta/pants-forrados-de-tejido-woven-windrunner-bgz7fD.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a
+                        href="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/041a8ad3-f090-4ab1-8a7c-686fb1a88099/pants-forrados-de-tejido-woven-windrunner-bgz7fD.png"><img
+                            src="../img/Nike/vestimenta/pants-forrados-de-tejido-woven-windrunner-bgz7fD.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Windrunner</h5>
                         <p class="descriptionProducto">Pants Forrados de tejido Woven </p>
                         <p class="precio"> $80.97 <span class="descuento">$95.50</span></p>
                         <button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                </path>
+                            </svg>
                             ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product">
+                                <path
+                                    d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                </path>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -428,37 +646,61 @@
 
     <!--Vestimenta -->
     <div class="container mb-5 mt-5">
-        <h4 class="subtitulos">Equipo / Accesorios y Equipo</h4>
+        <h4 class="subtitulos" id="Accesorios">Equipo / Accesorios y Equipo</h4>
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/mochila-hoops-elite-32l-l0zSj5/DX9786-657"><img src="../img/Nike/vestimenta/mochila-hoops-elite-32l-l0zSj5.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/mochila-hoops-elite-32l-l0zSj5/DX9786-657"><img
+                            src="../img/Nike/vestimenta/mochila-hoops-elite-32l-l0zSj5.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Hoops Elite</h5>
                         <p class="descriptionProducto"> Mochila (32 L)</p>
                         <p class="precio"> $87.97 <span class="descuento">$95.40</span></p>
-                        <a href="https://www.nike.com/us/es/t/mochila-hoops-elite-32l-l0zSj5/DX9786-657"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button>
+                        <a href="https://www.nike.com/us/es/t/mochila-hoops-elite-32l-l0zSj5/DX9786-657"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
                     </div></a>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/maleta-de-entrenamiento-hoops-elite-57l-46GMbz/DX9789-100"><img src="../img/Nike/vestimenta/maleta-de-entrenamiento-hoops-elite-57l-46GMbz.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/maleta-de-entrenamiento-hoops-elite-57l-46GMbz/DX9789-100"><img
+                            src="../img/Nike/vestimenta/maleta-de-entrenamiento-hoops-elite-57l-46GMbz.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Hoops Elite</h5>
                         <p class="descriptionProducto"> Maleta de entrenamiento (57L) </p>
                         <p class="precio"> $60.10 <span class="descuento">$70.60</span></p>
-                        <a href="https://www.nike.com/us/es/t/maleta-de-entrenamiento-hoops-elite-57l-46GMbz/DX9789-100">
+                        <a
+                            href="https://www.nike.com/us/es/t/maleta-de-entrenamiento-hoops-elite-57l-46GMbz/DX9789-100">
                             <button class="cartBtn">
-                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
                                 ADD TO CART
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
                             </button>
                         </a>
 
@@ -467,68 +709,118 @@
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/lentes-de-sol-de-puente-bajo-marquee-edge-lb-bSLx3l/NKFN0259-390"><img src="../img/Nike/vestimenta/lentes-de-sol-de-puente-bajo-marquee-edge-lb-bSLx3l.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a
+                        href="https://www.nike.com/us/es/t/lentes-de-sol-de-puente-bajo-marquee-edge-lb-bSLx3l/NKFN0259-390"><img
+                            src="../img/Nike/vestimenta/lentes-de-sol-de-puente-bajo-marquee-edge-lb-bSLx3l.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Marquee Edge LB</h5>
                         <p class="descriptionProducto"> Lentes de sol de puente bajo </p>
                         <p class="precio"> $160.00 <span class="descuento">$170.40</span></p>
-                        <a href="https://www.nike.com/us/es/t/lentes-de-sol-de-puente-bajo-marquee-edge-lb-bSLx3l/NKFN0259-390"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a
+                            href="https://www.nike.com/us/es/t/lentes-de-sol-de-puente-bajo-marquee-edge-lb-bSLx3l/NKFN0259-390"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/gorra-swoosh-sin-estructura-c4Q0cW/FB5624-019"><img src="../img/Nike/vestimenta/gorra-swoosh-sin-estructura-c4Q0cW.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/gorra-swoosh-sin-estructura-c4Q0cW/FB5624-019"><img
+                            src="../img/Nike/vestimenta/gorra-swoosh-sin-estructura-c4Q0cW.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Dri-FIT Fly</h5>
                         <p class="descriptionProducto"> Gorra Swoosh sin estructura</p>
                         <p class="precio"> $28.00 <span class="descuento">$340.10</span></p>
-                        <a href="https://www.nike.com/us/es/t/gorra-swoosh-sin-estructura-c4Q0cW/FB5624-019"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a href="https://www.nike.com/us/es/t/gorra-swoosh-sin-estructura-c4Q0cW/FB5624-019"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-jordan-apex-j8k7cT/FD5188-436 "><img src="../img/Nike/vestimenta/gorro-tipo-pescador-jordan-apex-j8k7cT.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-jordan-apex-j8k7cT/FD5188-436 "><img
+                            src="../img/Nike/vestimenta/gorro-tipo-pescador-jordan-apex-j8k7cT.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Jordan Apex</h5>
                         <p class="descriptionProducto">Gorro tipo pescador</p>
                         <p class="precio"> $33.97 <span class="descuento">$40</span></p>
-                        <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-jordan-apex-j8k7cT/FD5188-436"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-jordan-apex-j8k7cT/FD5188-436"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card  mx-auto cardShop">
-                    <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-dri-fit-apex-xFxXQv/FZ7945-050"><img src="../img/Nike/vestimenta/gorro-tipo2-pescador-dri-fit-apex-xFxXQv.png"
-                        class="card-img-top" alt="Calzado Nike"></a>
+                    <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-dri-fit-apex-xFxXQv/FZ7945-050"><img
+                            src="../img/Nike/vestimenta/gorro-tipo2-pescador-dri-fit-apex-xFxXQv.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
                     <div class="card-body">
                         <h5 class="card-title">Nike Apex</h5>
                         <p class="descriptionProducto">Gorro tipo pescador Dri-FIT</p>
                         <p class="precio"> $40.97 <span class="descuento">$45.50</span></p>
-                        <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-dri-fit-apex-xFxXQv/FZ7945-050"><button class="cartBtn">
-                            <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em" xmlns="http://www.w3.org/2000/svg"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                            ADD TO CART
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" class="product"><path d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"></path></svg>
-                        </button></a>
+                        <a href="https://www.nike.com/us/es/t/gorro-tipo-pescador-dri-fit-apex-xFxXQv/FZ7945-050"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
                     </div>
                 </div>
             </div>
@@ -540,10 +832,12 @@
     <div class="container-fluid">
         <div class="card-group grupobanner">
             <div class="card grupobanner ">
-                <img src="../img/banner/calzado-vestimenta-y-accesorios-para-mujer (1).jpg" class="card-img-top" alt="Nike">
+                <img src="../img/banner/calzado-vestimenta-y-accesorios-para-mujer (1).jpg" class="card-img-top"
+                    alt="Nike">
             </div>
             <div class="card  grupobanner  ">
-                <img src="../img/banner/calzado-vestimenta-y-accesorios-para-mujer (2).jpg" class="card-img-top" alt="Nike">
+                <img src="../img/banner/calzado-vestimenta-y-accesorios-para-mujer (2).jpg" class="card-img-top"
+                    alt="Nike">
             </div>
             <div class="card  grupobanner  ">
                 <img src="../img/banner/calzado-vestimenta-y-accesorios-para-mujer.jpg" class="card-img-top" alt="nike">
@@ -552,34 +846,1018 @@
     </div>
 
     <div class="container">
-        <h1 class="Titulos mx-auto text-center mt-4"> ¡ Disponible Mujeres !  </h1>
+        <h1 class="Titulos mx-auto text-center mt-4" id="mujeres"> Disponible Mujeres </h1>
+    </div>
+
+    <!--Shoes Mujer-->
+    <div class="container mb-5 mt-5">
+        <h4 class="subtitulos">Mujer Nike Dunk Calzado</h4>
+        <div class="d-flex justify-content-end">
+            <a href="#top">
+                <button class="buttonBack">
+                    <div class="text">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>top</span>
+                    </div>
+                    <div class="clone">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>top</span>
+                    </div>
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg" width="20px">
+                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+            </a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-dunk-low-ppQwKZ/DD1503-1017"><img
+                            src="../img/Nike/Mujer/shoes/calzado-dunk-low-ppQwKZ.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto"> Calzado para Mujer </p>
+                        <p class="precio"> $117.97 <span class="descuento">$125.40</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-dunk-low-ppQwKZ/DD1503-101"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-dunk-low-fHtPfk/FZ4341-100"><img
+                            src="../img/Nike/Mujer/shoes/calzado-dunk-low-fHtPfk.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto"> Calzado para mujer </p>
+                        <p class="precio"> $130.10 <span class="descuento">$150.60</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-dunk-low-fHtPfk/FZ4341-100">
+                            <button class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-dunk-low-jFHfRW/FZ4347-100"><img
+                            src="../img/Nike/Mujer/shoes/nike-dunk-low-unlocked-by-you (1).jpeg" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto"> Calzado para mujer</p>
+                        <p class="precio"> $160.00 <span class="descuento">$170.40</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-dunk-low-jFHfRW/FZ4347-100"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/u/nike-dunk-low-unlocked-by-you-10001614/5150220534"><img
+                            src="../img/Nike/Mujer/shoes/nike-dunk-low-unlocked-by-you.jpeg" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low Unlocked By You</h5>
+                        <p class="descriptionProducto">Calzado para mujer</p>
+                        <p class="precio"> $130.00 <span class="descuento">$140.10</span></p>
+                        <a href="https://www.nike.com/us/es/u/nike-dunk-low-unlocked-by-you-10001614/5150220534"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-dunk-low-KxSmbV/FZ4349-100"><img
+                            src="../img/Nike/Mujer/shoes/calzado-dunk-low-jFHfRW.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto">Calzado para mujer</p>
+                        <p class="precio"> $133.97 <span class="descuento">$140</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-dunk-low-KxSmbV/FZ4349-100"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-dunk-low-KxSmbV/FZ4349-100"><img
+                            src="../img/Nike/Mujer/shoes/calzado-dunk-low-KxSmbV.jpeg" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto">Calzado para mujer</p>
+                        <p class="precio"> $130.97 <span class="descuento">$145.50</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-dunk-low-KxSmbV/FZ4349-100"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Shoes Mujer-->
+    <div class="container mb-5 mt-5">
+        <h4 class="subtitulos">Ropa / Mujer Nike </h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/chamarra-bomber-oversized-sportswear-essential-jpbGpK/FN2839-010"><img
+                            src="../img/Nike/Mujer/vestimenta/chamarra-bomber-oversized-sportswear-essential-jpbGpK.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Sportswear Essential</h5>
+                        <p class="descriptionProducto"> Chamarra bomber oversized para mujer</p>
+                        <p class="precio"> $117.97 <span class="descuento">$125.40</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/chamarra-bomber-oversized-sportswear-essential-jpbGpK/FN2839-010"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/shorts-de-ciclismo-con-bolsillos-de-20-900-de-tiro-alto-y-media-sujeci%C3%B3n-universa-gFdL6Q/DQ5889-227"><img
+                            src="../img/Nike/Mujer/vestimenta/shorts-de-ciclismo-de-20-900-y-tiro-medio-de-media-sujeción-universa-con-bolsillos-gFdL6Q.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Universa</h5>
+                        <p class="descriptionProducto">Shorts de ciclismo de 20 cm </p>
+                        <p class="precio"> $30.10 <span class="descuento">$39.60</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/shorts-de-ciclismo-con-bolsillos-de-20-900-de-tiro-alto-y-media-sujeci%C3%B3n-universa-gFdL6Q/DQ5889-227">
+                            <button class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/playera-de-manga-larga-dri-fit-cropped-pro-365-mGlHjV/FV5484-361"><img
+                            src="../img/Nike/Mujer/vestimenta/playera-de-manga-larga-dri-fit-cropped-pro-365-mGlHjV.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Pro 365</h5>
+                        <p class="descriptionProducto"> Playera de manga larga Dri-FIT cropped</p>
+                        <p class="precio"> $50.00 <span class="descuento">$540.40</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/playera-de-manga-larga-dri-fit-cropped-pro-365-mGlHjV/FV5484-361"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/shorts-de-13-900-pro-365-d7TXG0/CZ9831-481"><img
+                            src="../img/Nike/Mujer/vestimenta/shorts-de-13-900-pro-365-d7TXG0.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Pro 365</h5>
+                        <p class="descriptionProducto">Shorts de 13 cm para mujer</p>
+                        <p class="precio"> $30.00 <span class="descuento">$35.10</span></p>
+                        <a href="https://www.nike.com/us/es/t/shorts-de-13-900-pro-365-d7TXG0/CZ9831-481"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/camiseta-de-tirantes-dri-fit-cropped-one-classic-CQ9MMp/FN2845-100"><img
+                            src="../img/Nike/Mujer/vestimenta/camiseta-de-tirantes-dri-fit-cropped-one-classic-CQ9MMp.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike One Classic</h5>
+                        <p class="descriptionProducto">Camiseta de tirantes Dri-FIT cropped </p>
+                        <p class="precio"> $33.97 <span class="descuento">$40</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/camiseta-de-tirantes-dri-fit-cropped-one-classic-CQ9MMp/FN2845-100"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/bra-deportivo-con-almohadilla-de-media-sujeci%C3%B3n-indy-plunge-cutout-WsnzTx/DV9837-100"><img
+                            src="../img/Nike/Mujer/vestimenta/bra-deportivo-con-almohadilla-de-media-sujeción-indy-plunge-cutout-WsnzTx.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto">Calzado para mujer</p>
+                        <p class="precio"> $26.97 <span class="descuento">$48.50</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/bra-deportivo-con-almohadilla-de-media-sujeci%C3%B3n-indy-plunge-cutout-WsnzTx/DV9837-100"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mb-5 mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/shorts-de-fitness-sin-forro-de-tiro-medio-dri-fit-de-13-900-attack-3pXs5Q/DX6024-363"><img
+                            src="../img/Nike/Mujer/vestimenta/shorts-de-fitness-sin-forro-de-tiro-medio-dri-fit-de-13-900-attack-3pXs5Q.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Attack</h5>
+                        <p class="descriptionProducto"> Shorts de fitness sin forro de tiro medio Dri-FIT</p>
+                        <p class="precio"> $17.97 <span class="descuento">$25.40</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/shorts-de-fitness-sin-forro-de-tiro-medio-dri-fit-de-13-900-attack-3pXs5Q/DX6024-363"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="hhttps://www.nike.com/us/es/t/leggings-con-bolsillos-de-7-8-de-tiro-alto-de-sujeci%C3%B3n-firme-talla-grande-go-sBR0Gk/DV4902-390"><img
+                            src="../img/Nike/Mujer/vestimenta/leggings-con-bolsillos-de-7-8-de-tiro-alto-de-sujeción-firme-talla-grande-go-sBR0Gk.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Go</h5>
+                        <p class="descriptionProducto">Leggings de cintura alta de 7/8</p>
+                        <p class="precio"> $70.10 <span class="descuento">$79.60</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/leggings-con-bolsillos-de-7-8-de-tiro-alto-de-sujeci%C3%B3n-firme-talla-grande-go-sBR0Gk/DV4902-390">
+                            <button class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/pants-de-tejido-fleece-solo-swoosh-8JmVnT/CW5565-030"><img
+                            src="../img/Nike/Mujer/vestimenta/pants-de-tejido-fleece-solo-swoosh-8JmVnT.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Solo Swoosh</h5>
+                        <p class="descriptionProducto"> Pants de tejido Fleece para mujer</p>
+                        <p class="precio"> $60.00 <span class="descuento">$100.40</span></p>
+                        <a href="https://www.nike.com/us/es/t/pants-de-tejido-fleece-solo-swoosh-8JmVnT/CW5565-030"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/chamarra-bomber-universitaria-reversible-sportswear-DvFNNr/DV7876-307"><img
+                            src="../img/Nike/Mujer/vestimenta/chamarra-bomber-universitaria-reversible-sportswear-DvFNNr.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Sportswear</h5>
+                        <p class="descriptionProducto">Chamarra bomber universitaria reversible </p>
+                        <p class="precio"> $155.00 <span class="descuento">$165.10</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/chamarra-bomber-universitaria-reversible-sportswear-DvFNNr/DV7876-307"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/sudadera-oversized-de-cuello-redondo-de-tejido-fleece-sportswear-phoenix-KQxbFk/DQ5733-365"><img
+                            src="../img/Nike/Mujer/vestimenta/sudadera-oversized-de-cuello-redondo-de-tejido-fleece-sportswear-phoenix-KQxbFk.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Sportswear Phoenix Fleece</h5>
+                        <p class="descriptionProducto">Sudadera oversized de cuello redondo</p>
+                        <p class="precio"> $73.97 <span class="descuento">$80</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/sudadera-oversized-de-cuello-redondo-de-tejido-fleece-sportswear-phoenix-KQxbFk/DQ5733-365"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/vestido-oversized-sportswear-tech-fleece-ZZk65N/FB8336-013"><img
+                            src="../img/Nike/Mujer/vestimenta/vestido-oversized-sportswear-tech-fleece-ZZk65N.png"
+                            alt="Nike" class="card-img-top" alt="Calzado Nike"></a>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Sportswear Tech Fleece</h5>
+                        <p class="descriptionProducto">Vestido oversized para mujer</p>
+                        <p class="precio"> $126.97 <span class="descuento">$128.50</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/vestido-oversized-sportswear-tech-fleece-ZZk65N/FB8336-013"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Banner Kids -->
+
+    <div class="container-fluid" id="kids">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ratio ratio-16x9">
+                        <img src="../img/Nike/Kids/calzado-vestimenta-y-accesorios-para-niños-nike-nike-com.jpg"
+                            alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Titulo-->
+    <section>
+        <div class="container">
+            <h1 class="Titulos mx-auto text-center mt-4"> Disponible Niños </h1>
+        </div>
+    </section>
+
+    <!--Kids -->
+    <div class="container mb-5 mt-5">
+        <h4 class="subtitulos">Calzado / Niños y Niñas </h4>
+        <div class="d-flex justify-content-end">
+            <a href="#top">
+                <button class="buttonBack">
+                    <div class="text">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>top</span>
+                    </div>
+                    <div class="clone">
+                        <span>Back</span>
+                        <span>to</span>
+                        <span>top</span>
+                    </div>
+                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg" width="20px">
+                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+            </a>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-court-legacy-Mb7npn/DA5381-102"><img
+                            src="../img/Nike/Kids/shoes/calzado-court-legacy-Mb7npn.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Court Legacy</h5>
+                        <p class="descriptionProducto"> Calzado para niños de preescolar</p>
+                        <p class="precio"> $47.97 <span class="descuento">$50.40</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-court-legacy-Mb7npn/DA5381-102"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-grandes-air-jordan-1-mid-H5qqbF/DQ8423-103"><img
+                            src="../img/Nike/Kids/shoes/calzado-grandes-air-jordan-1-mid-H5qqbF.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 Mid</h5>
+                        <p class="descriptionProducto">Calzado para niños grandes</p>
+                        <p class="precio"> $110.10 <span class="descuento">$119.60</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-grandes-air-jordan-1-mid-H5qqbF/DQ8423-103">
+                            <button class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-jordan-1-mid-2ldPNg/DQ8424-006"><img
+                            src="../img/Nike/Kids/shoes/calzado-jordan-1-mid-2ldPNg.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 1 Mid</h5>
+                        <p class="descriptionProducto"> Calzado para niños de preescolar</p>
+                        <p class="precio"> $70.00 <span class="descuento">$75.40</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-jordan-1-mid-2ldPNg/DQ8424-006"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-e-infantil-jordan-1-low-alt-se-qNbmtW/FJ3450-001"><img
+                            src="../img/Nike/Kids/shoes/calzado-e-infantil-jordan-1-retro-high-og-DM6q2w.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 1 Low Alt SE</h5>
+                        <p class="descriptionProducto">Tenis para bebé e infantil</p>
+                        <p class="precio"> $70.00 <span class="descuento">$75.10</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-e-infantil-jordan-1-low-alt-se-qNbmtW/FJ3450-001"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-e-infantil-jordan-1-retro-high-og-WZPRKx/FD1413-042"><img
+                            src="../img/Nike/Kids/shoes/calzado-e-infantil-jordan-1-retro-high-og-WZPRKx.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 1 Retro High OG
+                        </h5>
+                        <p class="descriptionProducto">Calzado para bebé e infantil</p>
+                        <p class="precio"> $73.97 <span class="descuento">$80</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/calzado-e-infantil-jordan-1-retro-high-og-WZPRKx/FD1413-042"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/calzado-dunk-low-NVTDbR/FZ3536-100"><img
+                            src="../img/Nike/Kids/shoes/calzado-dunk-low-NVTDbR.png" class="card-img-top"
+                            alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Dunk Low</h5>
+                        <p class="descriptionProducto">Calzado para niños de preescolar</p>
+                        <p class="precio"> $70.97 <span class="descuento">$78.50</span></p>
+                        <a href="https://www.nike.com/us/es/t/calzado-dunk-low-NVTDbR/FZ3536-100"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
 
+    <div class="container mb-5 mt-5">
+        <h4 class="subtitulos">Ropa / Niños y Niñas </h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/conjunto-de-shorts-infantil-readyset-xzkQJl/76L740-U90"><img
+                            src="../img/Nike/Kids/vestimenta/conjunto-de-shorts-infantil-readyset-xzkQJl.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike ReadySet</h5>
+                        <p class="descriptionProducto"> Conjunto de shorts infantil</p>
+                        <p class="precio"> $47.97 <span class="descuento"></span></p>
+                        <a href="https://www.nike.com/us/es/t/conjunto-de-shorts-infantil-readyset-xzkQJl/76L740-U90"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                    </div></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/conjunto-de-2-piezas-readyset-vRsWMl/76L347-X5C"><img
+                            src="../img/Nike/Kids/vestimenta/conjunto-de-2-piezas-infantil-readyset-vRsWMl.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike ReadySet</h5>
+                        https://www.nike.com/us/es/t/chamarra-infantil-con-cierre-completo-sportswear-windrunner-FnjDHf/76C663-E5D
+                        <p class="descriptionProducto">Conjunto de 2 piezas infantil</p>
+                        <p class="precio"> $50.10 <span class="descuento">$59.60</span></p>
+                        <a href="https://www.nike.com/us/es/t/conjunto-de-2-piezas-readyset-vRsWMl/76L347-X5C">
+                            <button class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/chamarra-infantil-con-cierre-completo-sportswear-windrunner-FnjDHf/76C663-E5D"><img
+                            src="../img/Nike/Kids/vestimenta/chamarra-infantil-con-cierre-completo-sportswear-windrunner-FnjDHf.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Sportswear Windrunner</h5>
+                        <p class="descriptionProducto"> Chamarra infantil con cierre completo</p>
+                        <p class="precio"> $48.00 <span class="descuento">$55.40</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/chamarra-infantil-con-cierre-completo-sportswear-windrunner-FnjDHf/76C663-E5D"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a
+                        href="https://www.nike.com/us/es/t/conjunto-de-shorts-de-ciclismo-infantil-happy-camper-JWsf5c/26M009-AFN"><img
+                            src="../img/Nike/Kids/vestimenta/conjunto-de-shorts-de-ciclismo-infantil-happy-camper-JWsf5c.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Happy Camper</h5>
+                        <p class="descriptionProducto">Conjunto de shorts de ciclismo infantil</p>
+                        <p class="precio"> $45.00 <span class="descuento">$55.10</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/conjunto-de-shorts-de-ciclismo-infantil-happy-camper-JWsf5c/26M009-AFN"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/playera-estampada-infantil-smiley-qZvzVH/76L834-782"><img
+                            src="../img/Nike/Kids/vestimenta/playera-estampada-infantil-smiley-qZvzVH.png"
+                            class="card-img-top" alt="Calzado Nike"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Smiley</h5>
+                        <p class="descriptionProducto">Playera con gráfico infantil</p>
+                        <p class="precio"> $18.97 <span class="descuento"></span></p>
+                        <a href="https://www.nike.com/us/es/t/playera-estampada-infantil-smiley-qZvzVH/76L834-782"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  mx-auto cardShop">
+                    <a href="https://www.nike.com/us/es/t/playera-con-estampado-sole-food-infantil-pg5Z5F/76M101-G25"><img
+                            src="../img/Nike/Kids/vestimenta/playera-con-estampado-sole-food-infantil-pg5Z5F.png"
+                            alt="Nike" class="card-img-top" alt="Calzado Nike"></a>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Playera</h5>
+                        <p class="descriptionProducto">Playera con estampado Sole Food infantil</p>
+                        <p class="precio"> $26.97 <span class="descuento">$30.50</span></p>
+                        <a
+                            href="https://www.nike.com/us/es/t/playera-con-estampado-sole-food-infantil-pg5Z5F/76M101-G25"><button
+                                class="cartBtn">
+                                <svg class="cart" fill="white" viewBox="0 0 576 512" height="0.8em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                                ADD TO CART
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"
+                                    class="product">
+                                    <path
+                                        d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z">
+                                    </path>
+                                </svg>
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
 
+    <!--Banner Symbol -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="container-fluid" id="kids">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="ratio ratio-16x9">
+                        <img src="../img/banner/nike-inc-swoosh-jordan-converse-logos.png" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -677,13 +1955,13 @@
                     </div>
 
                 </div>
-                <div class="wcs_popup_input" data-number="528123861273"
+                <div class="wcs_popup_input" data-number="584126581304"
                     data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
                     <input type="text" placeholder="Escribir pregunta!" />
                     <i class="fa fa-play"></i>
                 </div>
                 <div class="wcs_popup_avatar">
-                    <img src="https://avatars.githubusercontent.com/janl?s=180" alt="">
+                    <img src="../img/logotipoBlack.png" alt="logotipo">
                 </div>
             </div>
         </div>
