@@ -7,7 +7,7 @@ body {
 }
 .textoNavSuperior{
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
 }
 .navBar{
@@ -302,39 +302,67 @@ a {
     text-decoration: line-through;
 }
 
-/* BTN DE BACK */
-/* .buttonBack {
-    font-size: 25px;
-    font-weight: 300;
+.spanVolver{
+    color: gray;
+}
+
+.cardSeleccion{
+    border:none;
     background-color: transparent;
+}
+
+.cta {
     border: none;
-    color: black;
-    width: 45px;
-    height: 45px;
-    opacity: 0.75;
-    
-    border-radius: 8px;
+    background: none;
     cursor: pointer;
 }
 
-.buttonBack:hover {
-    animation: bounce_513 1s infinite;
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
 }
 
-@keyframes bounce_513 {
-    0%,
-    100% {
-    transform: translateY(25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
 }
 
-50% {
+.cta:hover svg {
     transform: translateX(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
-} */
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 
-.spanVolver{
-    color: gray;
+.bannerImagen1 {
+    border-top-left-radius: 19px;
 }
