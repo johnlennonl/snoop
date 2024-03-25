@@ -8,6 +8,7 @@ body {
 .textoNavSuperior{
     color: white;
     font-size: 0.8rem;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 .navBar{
@@ -32,16 +33,26 @@ body {
 /* t i t u l o s  */
 
 .Titulos{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 800;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .subtitulo {
     color: rgb(11, 11, 11);
+    font-family: 'Times New Roman', Times, serif;
 }
 
+.infoSuscripcion {
+    font-size: 1.1rem;
+    color: #dad7d7;
+
+}
+.suscripcionLabel{
+    width: 300px;
+}
 
 /* Logotipos */
 /* iconos Flotantes */
@@ -57,8 +68,20 @@ body {
     transform: scale(1.5);
 }
 
+
+.logotipoMarcas{
+    width: 60px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.4s;;
+}
+.logotipoMarcas:hover{
+    transform: scale(1.5);
+}
+
+
 .colorFondo{
-background-color: rgba(161, 158, 158, 0.165);
+background-color: rgba(161, 158, 158, 0.072);
 }
 
 /* Informacionm */
