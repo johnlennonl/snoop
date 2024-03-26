@@ -389,3 +389,10 @@ a {
 .bannerImagen1 {
     border-top-left-radius: 19px;
 }
+
+
+.cardBanner{
+    border: none;
+    background-color: transparent;
+    
+}
