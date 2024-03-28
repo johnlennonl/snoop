@@ -357,3 +357,22 @@ a {
     font-weight: 500;
     cursor: pointer;
 }
+
+
+
+#scrollBtn{
+    position: fixed;
+    margin-bottom: 60px;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(3, 3, 3);
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+#scrollBtn:hover{
+    background-color: rgb(66, 66, 66);
+}
