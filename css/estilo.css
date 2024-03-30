@@ -263,6 +263,7 @@ a {
     cursor: pointer;
 }
 .precio{
+    margin-top: 0px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -375,4 +376,15 @@ a {
 }
 #scrollBtn:hover{
     background-color: rgb(66, 66, 66);
+}
+
+
+.iconosRedesSociales{
+    width: 40px;
+    
+}
+
+.redSocial:hover{
+    color: gray;
+    cursor: pointer;
 }
